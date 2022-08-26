@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+#override {
+  font-family: "Source Sans Pro";
+}
+
+/* Navbar */
+#override .nav-item {
+  color: "black"
+}
