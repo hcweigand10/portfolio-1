@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+import React, { useEffect, useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import { MDBCollapse } from 'mdb-react-ui-kit';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     const [activePage, setActivePage] = useState(window.location.pathname);
@@ -29,7 +30,7 @@ const Navbar = () => {
 
     return (
         // <!-- Navbar -->
-        <nav className="navbar navbar-expand-md p-0 bg-white">
+        <nav className="navbar navbar-expand-md p-0">
             {/* <!-- Container wrapper --> */}
             <div className="container-fluid custom-nav ps-0">
                 <button
@@ -66,16 +67,16 @@ const Navbar = () => {
                     {/* <!-- Rght links --> */}
                     <ul
                         className="navbar-nav mb-md-0 py-1 justify-content-end d-flex"
-                        style={{ fontSize: "18px", width: "100%" }}
+                        style={{ fontSize: "18px", width: "100%"}}
                     >
                         <li className="nav-item">
                             <Link
                                 className={
                                     activePage === "/"
-                                        ? "nav-link custom-link-active"
+                                        ? "nav-link custom-link"
                                         : "nav-link custom-link"
                                 }
-                                to="/"
+                                to="#landing"
                                 onClick={() => handlePageChange("/")}
                             >
                                 Home
@@ -85,10 +86,10 @@ const Navbar = () => {
                             <Link
                                 className={
                                     activePage === "/about"
-                                        ? "nav-link custom-link-active"
+                                        ? "nav-link custom-link"
                                         : "nav-link custom-link"
                                 }
-                                to="/about"
+                                to="#about"
                                 onClick={() => handlePageChange("/about")}
                             >
                                 About
@@ -98,10 +99,10 @@ const Navbar = () => {
                             <Link
                                 className={
                                     activePage === "/projects"
-                                        ? "nav-link custom-link-active"
+                                        ? "nav-link custom-link"
                                         : "nav-link custom-link"
                                 }
-                                to="/projects"
+                                to="#projects"
                                 onClick={() => handlePageChange("/projects")}
                             >
                                 Projects

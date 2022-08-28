@@ -1,0 +1,28 @@
+:root {
+  --pink: rgb(224, 100, 121);
+  --light: rgb(255, 255, 255);
+  --darkgrey: rgba(68, 68, 68, 0.952);
+  --lightgrey: rgba(244, 236, 236, 0.793);
+  --dark: rgb(0,0,0);
+  --blue: #01cdfe;
+  --steelblue : #4682b4;
+}
+
+#override {
+  font-family: "Source Sans Pro";
+}
+
+/* Navbar */
+#override .custom-link {
+  color: black;
+}
+
+#override .custom-link:hover {
+  color: var(--blue);
+}
+
+
+
+#override #landing {
+  background-color: #1348b1;
+}

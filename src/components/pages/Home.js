@@ -10,7 +10,7 @@ import Navbar from "../Navbar"
 const Home = () => {
 
     return (
-        <div className='bg-light' style={{minHeight: "82vh"}}>
+        <div className='' style={{minHeight: "82vh"}} id="home">
             <Navbar />
              <Landing/>
              <About/>
