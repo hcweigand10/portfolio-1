@@ -9,35 +9,6 @@ import { maxHeight } from '@mui/system';
 
 const StickyFooter = () => {
   return (
-    // <Box
-    //   sx={{
-    //     display: 'flex',
-    //     flexDirection: 'column',
-    //     background: "black",
-    //     color: "white",
-    //     maxHeight: "23vh"
-    //   }}
-    // >
-    //   <CssBaseline />
-    //   <Container component="main" sx={{ mt: 4, mb: 2 }} maxWidth="sm">
-    //     <Grid container spacing={2}>
-    //       <Grid item xs={12} md={6}>
-            
-    //       </Grid>
-    //       <Grid item xs={12} md={6}>
-
-    //       </Grid>
-    //     </Grid>
-    //     <Typography variant="h4" component="h1" gutterBottom>
-    //       Sticky footer
-    //     </Typography>
-    //     <Typography variant="h5" component="h2" gutterBottom>
-    //       {'Pin a footer to the bottom of the viewport.'}
-    //       {'The footer will move as the main element of the page grows.'}
-    //     </Typography>
-    //     <Typography variant="body1">Sticky footer placeholder.</Typography>
-    //   </Container>
-    //   <hr style={{width: "80%", height: "1px", backgroundColor: "gray", borderColor: "gray"}}/>
       <div
         className='pt-3'
         component="footer"
@@ -58,14 +29,13 @@ const StickyFooter = () => {
            <Grid item xs={12} md={6}>
               <h5 className='text-center'>HENRY WEIGAND</h5>
               <ul style={{listStyleType: "none"}}>
-                <li><a></a></li>
+                <li>Icons from <a href='https://icons8.com'>icons8</a></li>
                 <li></li>
               </ul>
            </Grid>
          </Grid>
         </Container>
       </div>
-    // </Box>
   );
 }
 

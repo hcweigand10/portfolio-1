@@ -2,9 +2,11 @@
   --pink: rgb(224, 100, 121);
   --light: rgb(255, 255, 255);
   --darkgrey: rgba(68, 68, 68, 0.952);
-  --lightgrey: rgba(244, 236, 236, 0.793);
+  --lightgrey: rgba(235, 235, 235, 0.55);
   --dark: rgb(0,0,0);
-  --blue: #01cdfe;
+  --blue: #36d6fef0;
+  --primary: #8F0B0B;
+  --secondary: #FFD700;
   --steelblue : #4682b4;
 }
 
@@ -18,11 +20,78 @@
 }
 
 #override .custom-link:hover {
-  color: var(--blue);
+  color: var(--secondary);
+  font-weight: 900;
 }
 
+#override .custom-nav {
+  border-bottom: 4px solid var(--primary);
+}
 
+/* Home  */
+#override .bg-custom-lg {
+  background-color: var(--lightgrey);
+}
 
-#override #landing {
-  background-color: #1348b1;
+#override .name-span {
+  color: var(--primary);
+}
+
+#override .landing-btn {
+  background: var(--secondary);
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 5%;
+  transition: all .2s ease-in;
+}
+
+#override .landing-btn:hover {
+  padding: 12px;
+  font-weight: 900;
+  background-color: var(--primary);
+  color: white;
+  letter-spacing: 2px;
+}
+
+#override .section-heading {
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+#override .section-underline {
+  width: 30px;
+  opacity: 1;
+  border-radius: 3px;
+  height: 6px;
+}
+
+#override .underline-secondary {
+  border: 1px solid var(--secondary);
+  background: var(--secondary);
+}
+
+#override .underline-primary {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+}
+
+#override #profile-pic {
+  width: 90%;
+  /* height: 40vh; */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#override .skill-icon {
+  color: gray;
+  opacity: 0.8;
+  transition: all 0.2s ease-in;
+}
+
+#override .skill-icon:hover {
+  color: var(--secondary);
+  opacity: 1;
+  cursor: default;
+  margin-top: -10px;
 }
