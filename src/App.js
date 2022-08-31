@@ -1,4 +1,5 @@
 import { Route, BrowserRouter as Router, Routes, } from "react-router-dom";
+import React from "react"
 
 import Home from './components/pages/Home';
 import ProjectView from "./components/pages/ProjectView"
