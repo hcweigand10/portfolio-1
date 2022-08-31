@@ -7,7 +7,7 @@ const About = () => {
         <div className='py-4'>
              <h2 className='text-center section-heading mb-1'>About</h2>
              <div className='d-flex justify-content-center'><hr className='section-underline underline-primary'/></div>
-             <section className="row my-3 mx-auto p-3">
+             <section className="row my-1 mx-auto p-3">
                 <div className="col-md-6 text-center p-3">
                     <img
                         className=""

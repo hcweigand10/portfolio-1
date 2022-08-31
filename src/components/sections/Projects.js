@@ -10,7 +10,7 @@ const Projects = () => {
         {
             title: "Dosch Realty",
             description:
-                "React Website built for Bradley Dosch, a Seattle-based realtor. The site featues easy navigation, a built-in content manager for Brad to easily add and update blog posts, and connected sql database for storing and accessing blogs and testimonials written by former clients.",
+                "React Website I built for Bradley Dosch, a Seattle-based realtor. Featues easy navigation, a built-in content manager to easily add and update blog posts, and connected sql database for  blogs and testimonials written by former clients.",
             awards: "",
             liveUrl: "https://profound-lollipop-4eb9d0.netlify.app/",
             github: "https://github.com/hcweigand10/fake-youtube",
@@ -42,7 +42,7 @@ const Projects = () => {
         <div className='py-4'>
              <h2 className='text-center section-heading mb-1'>Projects</h2>
              <div className='d-flex justify-content-center'><hr className='section-underline underline-primary'/></div>
-             <div className='container'>    
+             <div className='mx-auto' style={{width: "90vw", maxWidth: "1000px"}}>    
                 {previews}
              </div>
         </div>

@@ -95,3 +95,30 @@
   cursor: default;
   margin-top: -10px;
 }
+
+#override .custom-btn {
+  background-color: var(--secondary);
+  border: none;
+  opacity: 0.9;
+  transition: all .2s;
+}
+
+#override .custom-btn:hover {
+  background-color: var(--primary);
+  border: none;
+  color: white;
+  opacity: 1;
+}
+
+#override .project-preview-pic {
+  max-width: 450px;
+  width: 40vw
+}
+
+@media screen and (max-width: 992px) {
+  #override .project-preview-pic {
+    width: 85%;
+    margin-bottom: 20px;
+    max-width: none;
+  }
+}
