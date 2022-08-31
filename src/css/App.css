@@ -1,124 +1,142 @@
 :root {
-  --pink: rgb(224, 100, 121);
-  --light: rgb(255, 255, 255);
-  --darkgrey: rgba(68, 68, 68, 0.952);
-  --lightgrey: rgba(235, 235, 235, 0.55);
-  --dark: rgb(0,0,0);
-  --blue: #36d6fef0;
-  --primary: #8F0B0B;
-  --secondary: #FFD700;
-  --steelblue : #4682b4;
+    --pink: rgb(224, 100, 121);
+    --light: rgb(255, 255, 255);
+    --darkgrey: rgba(68, 68, 68, 0.952);
+    --lightgrey: rgba(235, 235, 235, 0.55);
+    --dark: rgb(0, 0, 0);
+    --blue: #36d6fef0;
+    --primary: #8f0b0b;
+    --secondary: #ffd700;
+    --steelblue: #4682b4;
 }
 
 #override {
-  font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro";
 }
 
 /* Navbar */
 #override .custom-link {
-  color: black;
+    color: black;
 }
 
 #override .custom-link:hover {
-  color: var(--secondary);
-  font-weight: 900;
+    color: var(--secondary);
+    font-weight: 900;
 }
 
 #override .custom-nav {
-  border-bottom: 4px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
 }
 
 /* Home  */
 #override .bg-custom-lg {
-  background-color: var(--lightgrey);
+    background-color: var(--lightgrey);
 }
 
 #override .name-span {
-  color: var(--primary);
+    color: var(--primary);
 }
 
 #override .landing-btn {
-  background: var(--secondary);
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-  border-radius: 5%;
-  transition: all .2s ease-in;
+    background: var(--secondary);
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5%;
+    transition: all 0.2s ease-in;
 }
 
 #override .landing-btn:hover {
-  padding: 12px;
-  font-weight: 900;
-  background-color: var(--primary);
-  color: white;
-  letter-spacing: 2px;
+    padding: 12px;
+    font-weight: 900;
+    background-color: var(--primary);
+    color: white;
+    letter-spacing: 2px;
 }
 
 #override .section-heading {
-  letter-spacing: 3px;
-  font-weight: bolder;
+    letter-spacing: 3px;
+    font-weight: bolder;
 }
 
 #override .section-underline {
-  width: 30px;
-  opacity: 1;
-  border-radius: 3px;
-  height: 6px;
+    width: 30px;
+    opacity: 1;
+    border-radius: 3px;
+    height: 6px;
 }
 
 #override .underline-secondary {
-  border: 1px solid var(--secondary);
-  background: var(--secondary);
+    border: 1px solid var(--secondary);
+    background: var(--secondary);
 }
 
 #override .underline-primary {
-  border: 1px solid var(--primary);
-  background: var(--primary);
+    border: 1px solid var(--primary);
+    background: var(--primary);
 }
 
 #override #profile-pic {
-  width: 90%;
-  /* height: 40vh; */
-  border-radius: 50%;
-  object-fit: cover;
+    width: 90%;
+    max-width: 400px;
+    /* height: 40vh; */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 #override .skill-icon {
-  color: gray;
-  opacity: 0.8;
-  transition: all 0.2s ease-in;
+    color: gray;
+    opacity: 0.8;
+    transition: all 0.2s ease-in;
 }
 
 #override .skill-icon:hover {
-  color: var(--secondary);
-  opacity: 1;
-  cursor: default;
-  margin-top: -10px;
+    color: var(--secondary);
+    opacity: 1;
+    cursor: default;
+    margin-top: -10px;
 }
 
 #override .custom-btn {
-  background-color: var(--secondary);
-  border: none;
-  opacity: 0.9;
-  transition: all .2s;
+    background-color: var(--secondary);
+    border: none;
+    opacity: 0.9;
+    transition: all 0.2s;
 }
 
 #override .custom-btn:hover {
-  background-color: var(--primary);
-  border: none;
-  color: white;
-  opacity: 1;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    opacity: 1;
 }
 
 #override .project-preview-pic {
-  max-width: 450px;
-  width: 40vw
+    max-width: 450px;
+    width: 40vw;
 }
 
 @media screen and (max-width: 992px) {
-  #override .project-preview-pic {
-    width: 85%;
-    margin-bottom: 20px;
-    max-width: none;
-  }
+    #override .project-preview-pic {
+        width: 85%;
+        margin-bottom: 20px;
+        max-width: none;
+    }
+}
+
+#override #custom-footer {
+    width: 100%;
+    background: var(--darkgrey);
+    color: var(--lightgrey);
+    min-height: 18vh;
+}
+
+#override .footer-social {
+  color: white;
+  opacity: 0.9;
+}
+
+#override .footer-social:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 2px 2px lightgray;
 }

@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path:path.resolve(__dirname, "dist"),
   },
+  mode: "development",
   module: {
     rules: [
       {
@@ -18,11 +19,19 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html"),
+      template: path.join(__dirname, "public", "index.html"),
     }),
   ],
 }
