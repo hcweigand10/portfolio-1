@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectPreview = ({ project }) => {
 
-    const toSnakeCase = (title) => {
-        return title.toLowerCase().split(" ").join("-")
-    }
+    // const toSnakeCase = (title) => {
+    //     return title.toLowerCase().split(" ").join("-")
+    // }
 
     return (
         <div className="row py-4">

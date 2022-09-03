@@ -1,38 +1,38 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "../Navbar";
-import projects from "../../utils/projectsData";
-import BrowserParty from "../BrowserParty";
-import DoschRealty from "../DoschRealty";
-import SkyfallTravel from "../SkyfallTravel";
+// import React, { useState, useEffect } from "react";
+// import Navbar from "../Navbar";
+// import projects from "../../utils/projectsData";
+// import BrowserParty from "../BrowserParty";
+// import DoschRealty from "../DoschRealty";
+// import SkyfallTravel from "../SkyfallTravel";
 
 
 const ProjectView = () => {
-    const [project, setProject] = useState({});
-    const [projectName, setProjectName] = useState("")
+    // const [project, setProject] = useState({});
+    // const [projectName, setProjectName] = useState("")
 
-    useEffect(() => {
-        const projectName = window.location.pathname.split("/")[2];
-        setProjectName(projectName)
-        if (projectName === "browser-party") {
-            setProject(projects.browserParty);
-        } else if (projectName === "skyfall-travel") {
-            setProject(projects.skyfallTravel);
-        } else {
-            setProject(projects.doschRealty);
-        }
-    }, []);
+    // useEffect(() => {
+    //     const projectName = window.location.pathname.split("/")[2];
+    //     setProjectName(projectName)
+    //     if (projectName === "browser-party") {
+    //         setProject(projects.browserParty);
+    //     } else if (projectName === "skyfall-travel") {
+    //         setProject(projects.skyfallTravel);
+    //     } else {
+    //         setProject(projects.doschRealty);
+    //     }
+    // }, []);
 
-    const importAll = (r) => {
-        let images = {};
-        r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-        return images;
-    }
+    // const importAll = (r) => {
+    //     let images = {};
+    //     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    //     return images;
+    // }
     
-    const images = importAll(require.context(`../../images/details/${projectName}`, false, '/\.jpg/'));
+    // const images = importAll(require.context(`../../images/details/${projectName}`, false, '/\.jpg/'));
 
     return (
         <div className="" style={{ minHeight: "86vh" }} id="project-view">
-            <Navbar />
+            {/* <Navbar />
             <div
                 className="bg-custom-lg"
                 id="project-view-main"
@@ -162,7 +162,7 @@ const ProjectView = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
