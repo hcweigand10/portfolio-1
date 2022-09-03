@@ -1,6 +1,6 @@
-import BrowserPic from "../assets/images/Browser.png";
-import DoschRealty from "../assets/images/brad-dosch.png";
-import SkyfallPic from "../assets/images/Skyfall1.png";
+import BrowserPic from "../assets/images/details/browser-party/bp-startscreen.png"
+import DoschRealty from "../assets/images/details/dosch-realty/dosch-home.png";
+import SkyfallPic from "../assets/images/details/skyfall-travel/skyfall-home.png";
 
 const projects = {
     browserParty: {
