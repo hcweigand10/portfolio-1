@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
     return (
-        <div className="py-4 bg-custom-lg pb-5">
+        <div className="py-4 bg-custom-lg pb-5" id="skills">
             <h2 className="text-center section-heading mb-1">Skills</h2>
             <div className="d-flex justify-content-center">
                 <hr className="section-underline underline-secondary" />

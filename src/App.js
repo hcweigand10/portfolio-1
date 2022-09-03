@@ -6,11 +6,12 @@ import ProjectView from "./components/pages/ProjectView"
 import StickyFooter from './components/StickyFooter';
 
 function App() {
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/project/:project-name" element={<ProjectView/>}/>
+        <Route path="/projects/:project" element={<ProjectView/>}/>
       </Routes>
       <StickyFooter/>
     </Router>

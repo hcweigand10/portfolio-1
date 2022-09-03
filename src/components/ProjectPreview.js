@@ -23,9 +23,6 @@ const ProjectPreview = ({ project }) => {
                     <a className="btn custom-btn" href={project.liveUrl}>
                         Live Site <FontAwesomeIcon icon={faUpRightFromSquare} />
                     </a>
-                    {/* <a className="btn custom-btn" href={`projects/${toSnakeCase(project.title)}`}>
-                        Learn More
-                    </a> */}
                     <a className="btn custom-btn" href={project.github}>
                         Github Repo
                     </a>

@@ -22,6 +22,7 @@
 #override .custom-link:hover {
     color: var(--secondary);
     font-weight: 900;
+    cursor: pointer;
 }
 
 #override .custom-nav {
@@ -30,6 +31,10 @@
 
 /* Home  */
 #override .bg-custom-lg {
+    background-color: var(--lightgrey);
+}
+
+#override #landing {
     background-color: var(--lightgrey);
 }
 
@@ -128,12 +133,13 @@
     width: 100%;
     background: var(--darkgrey);
     color: var(--lightgrey);
-    min-height: 18vh;
+    min-height: 14vh;
 }
 
 #override .footer-social {
   color: white;
   opacity: 0.9;
+  font-size: large;
 }
 
 #override .footer-social:hover {

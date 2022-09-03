@@ -1,8 +1,9 @@
 import React from "react";
+import {Element} from "react-scroll"
 
 const Contact = () => {
     return (
-        <div className="py-4 bg-custom-lg">
+        <Element className="py-4 bg-custom-lg" id="contact" name="contact">
             <h2 className="section-heading text-center mb-1">Contact</h2>
             <div className="d-flex justify-content-center">
                 <hr className="section-underline underline-secondary" />
@@ -48,7 +49,7 @@ const Contact = () => {
                     </a>
                 </div>
             </form>
-        </div>
+        </Element>
     );
 };
 

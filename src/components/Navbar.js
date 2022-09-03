@@ -1,20 +1,22 @@
-
 import React, { useState } from "react";
-
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
-import { MDBCollapse } from 'mdb-react-ui-kit';
+import { MDBCollapse } from "mdb-react-ui-kit";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     const [collapse, setCollapse] = useState(true);
-    const [absolute, setAbsolute] = useState(false)
-    
+    const [absolute, setAbsolute] = useState(false);
+
     const handleCollapse = () => {
-      setCollapse(!collapse);
-      setTimeout(() => {
-        setAbsolute(!absolute)
-      }, absolute ? 400:0);
+        setCollapse(!collapse);
+        setTimeout(
+            () => {
+                setAbsolute(!absolute);
+            },
+            absolute ? 400 : 0
+        );
     };
 
     return (
@@ -38,7 +40,7 @@ const Navbar = () => {
                 <Link
                     className="navbar-brand mt-md-0 p-2"
                     to="/"
-                    style={{fontSize: "x-large"}}
+                    style={{ fontSize: "x-large" }}
                 >
                     Henry Weigand
                 </Link>
@@ -47,47 +49,66 @@ const Navbar = () => {
                     className="navbar-collapse align-items-center ps-2"
                     id="navbarSupportedContent"
                     show={!collapse}
-                    style={absolute ? {position: "absolute", top: "46px", zIndex: 3, backgroundColor: "white", width: "100%"}: null}
+                    style={
+                        absolute
+                            ? {
+                                  position: "absolute",
+                                  top: "46px",
+                                  zIndex: 3,
+                                  backgroundColor: "white",
+                                  width: "100%",
+                              }
+                            : null
+                    }
                 >
-                    {/* <!-- Left links --> */}
-
-                    {/* <!-- Left links --> */}
                     {/* <!-- Rght links --> */}
                     <ul
                         className="navbar-nav mb-md-0 py-1 justify-content-end d-flex"
-                        style={{ fontSize: "18px", width: "100%"}}
+                        style={{ fontSize: "18px", width: "100%" }}
                     >
                         <li className="nav-item mx-2">
-                            <Link
+                            <ScrollLink
                                 className="nav-link custom-link"
-                                to="#landing"
-                            >
-                                Home
-                            </Link>
-                        </li>
-                        <li className="nav-item mx-2">
-                            <Link
-                                className="nav-link custom-link"
-                                to="#about"
+                                to="about"
+                                spy={true}
+                                smooth={false}
+                                duration={500}
                             >
                                 About
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link
+                        <ScrollLink
                                 className="nav-link custom-link"
-                                to="#skills"
+                                to="skills"
+                                spy={true}
+                                smooth={false}
+                                duration={500}
                             >
                                 Skills
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link
+                        <ScrollLink
                                 className="nav-link custom-link"
-                                to="#projects"
+                                to="projects"
+                                spy={true}
+                                smooth={false}
+                                duration={500}
                             >
                                 Projects
-                            </Link>
+                            </ScrollLink>
+                        </li>
+                        <li className="nav-item mx-2">
+                        <ScrollLink
+                                className="nav-link custom-link"
+                                to="contact"
+                                spy={true}
+                                smooth={false}
+                                duration={500}
+                            >
+                                Contact
+                            </ScrollLink>
                         </li>
                     </ul>
                     {/* <!-- Rght links --> */}

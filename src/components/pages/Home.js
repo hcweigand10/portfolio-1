@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Landing from "../sections/Landing"
 import About from "../sections/About"
 import Skills from "../sections/Skills"
@@ -10,7 +10,7 @@ import Navbar from "../Navbar"
 const Home = () => {
 
     return (
-        <div className='' style={{minHeight: "82vh"}} id="home">
+        <div className='' style={{minHeight: "86vh"}} id="home">
             <Navbar />
              <Landing/>
              <About/>

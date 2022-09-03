@@ -4,7 +4,7 @@ import profPic from "../../assets/images/zoomedProfpic.png"
 const About = () => {
 
     return (
-        <div className='py-4'>
+        <div className='py-4' id='about'>
              <h2 className='text-center section-heading mb-1'>About</h2>
              <div className='d-flex justify-content-center'><hr className='section-underline underline-primary'/></div>
              <section className="row my-1 mx-auto p-3">
