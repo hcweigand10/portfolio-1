@@ -51,7 +51,7 @@ const ProjectInfo = ({ description, awards, tech, liveUrl, github }) => {
                     Live Site <FontAwesomeIcon icon={faUpRightFromSquare} />
                 </a>
                 <a className="btn custom-btn" href={github} target="_blank" rel="noreferrer">
-                    Github Repo
+                    Github Repo <FontAwesomeIcon icon={faUpRightFromSquare} />
                 </a>
             </div>
         </div>
