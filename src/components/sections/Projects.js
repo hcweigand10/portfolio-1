@@ -4,7 +4,7 @@ import projects from '../../utils/projectsData';
 
 const Projects = () => {
 
-    const previews = [projects.doschRealty, projects.browserParty, projects.skyfallTravel].map((project, index) => <ProjectPreview project={project} key={index}/>)
+    const previews = [projects.doschRealty, projects.browserParty, projects.peterMusic, projects.skyfallTravel].map((project, index) => <ProjectPreview thumbnail={project.thumbnail} hook={project.hook} title={project.title} liveUrl={project.liveUrl} key={index}/>)
 
     return (
         <div className='py-4' id='projects'>

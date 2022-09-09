@@ -1,40 +1,51 @@
-// import React, { useState, useEffect } from "react";
-// import Navbar from "../Navbar";
-// import projects from "../../utils/projectsData";
-// import BrowserParty from "../BrowserParty";
-// import DoschRealty from "../DoschRealty";
-// import SkyfallTravel from "../SkyfallTravel";
-
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Navbar from "../Navbar";
+import projects from "../../utils/projectsData";
+import CarouselPlus from "../CarouselPlus";
+import ProjectInfo from "../ProjectInfo";
 
 const ProjectView = () => {
-    // const [project, setProject] = useState({});
-    // const [projectName, setProjectName] = useState("")
+    const { project } = useParams();
+    const [projectObj, setProjectObj] = useState({
+        title: "",
+        hook: "",
+        description: "",
+        liveUrl: "",
+        github: "",
+        awards: [],
+        pics: [],
+        thumbnail: null,
+        tech: [],
+    });
 
-    // useEffect(() => {
-    //     const projectName = window.location.pathname.split("/")[2];
-    //     setProjectName(projectName)
-    //     if (projectName === "browser-party") {
-    //         setProject(projects.browserParty);
-    //     } else if (projectName === "skyfall-travel") {
-    //         setProject(projects.skyfallTravel);
-    //     } else {
-    //         setProject(projects.doschRealty);
-    //     }
-    // }, []);
+    useEffect(() => {
+        switch (project) {
+            case "browser-party":
+                setProjectObj(projects.browserParty);
+                break;
+            case "bradley-dosch-realty":
+                setProjectObj(projects.doschRealty);
+                break;
+            case "peter-strasser-music":
+                setProjectObj(projects.peterMusic);
+                break;
+            case "skyfall-travel":
+                setProjectObj(projects.skyfallTravel);
+                break;
+            default:
+                setProjectObj(projects.browserParty);
+                break;
+        }
+    }, [project]);
 
-    // const importAll = (r) => {
-    //     let images = {};
-    //     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-    //     return images;
-    // }
-    
-    // const images = importAll(require.context(`../../images/details/${projectName}`, false, '/\.jpg/'));
+    console.log(projectObj);
 
     return (
         <div className="" style={{ minHeight: "86vh" }} id="project-view">
-            {/* <Navbar />
+            <Navbar />
             <div
-                className="bg-custom-lg"
+                className=""
                 id="project-view-main"
                 style={{ minHeight: "calc(86vh - 57px)" }}
             >
@@ -67,102 +78,33 @@ const ProjectView = () => {
                         Go Back
                     </a>
                 </div>
-                <div
-                    className="justify-content-center mx-auto mt-4"
-                    style={{ width: "92%", maxWidth: "1200px" }}
-                >
-                    <h3 className="text-center">{project.title}</h3>
-                    <div className="project-body row">
-                        <div className="col-xl-9">
-                            <div
-                                id="carouselExampleIndicators"
-                                class="carousel slide"
-                                data-ride="carousel"
-                            >
-                                <ol class="carousel-indicators">
-                                    <li
-                                        data-target="#carouselExampleIndicators"
-                                        data-slide-to="0"
-                                        class="active"
-                                    ></li>
-                                    <li
-                                        data-target="#carouselExampleIndicators"
-                                        data-slide-to="1"
-                                    ></li>
-                                    <li
-                                        data-target="#carouselExampleIndicators"
-                                        data-slide-to="2"
-                                    ></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img
-                                            class="d-block w-100"
-                                            src={project.pic}
-                                            alt="First slide"
-                                        />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>...</h5>
-                                            <p>...</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img
-                                            class="d-block w-100"
-                                            src={project.pic}
-                                            alt="Second slide"
-                                        />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>...</h5>
-                                            <p>...</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img
-                                            class="d-block w-100"
-                                            src={project.pic}
-                                            alt="Third slide"
-                                        />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>...</h5>
-                                            <p>...</p>
-                                        </div>
-                                    </div>
+                <div className="py-3 mx-auto project-view-inner">
+                    <h2 className="text-center section-heading">
+                        {projectObj.title}
+                    </h2>
+                    <div className="d-flex justify-content-center">
+                        <hr className="section-underline underline-primary" />
+                    </div>
+                    {projectObj.title && (
+                        <div className="py-3">
+                            <div className="row">
+                                <div className="col-xl-8 pb-4">
+                                    <CarouselPlus pics={projectObj.pics} />
                                 </div>
-                                <a
-                                    class="carousel-control-prev"
-                                    href="#carouselExampleIndicators"
-                                    role="button"
-                                    data-slide="prev"
-                                >
-                                    <span
-                                        class="carousel-control-prev-icon"
-                                        aria-hidden="true"
-                                    ></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a
-                                    class="carousel-control-next"
-                                    href="#carouselExampleIndicators"
-                                    role="button"
-                                    data-slide="next"
-                                >
-                                    <span
-                                        class="carousel-control-next-icon"
-                                        aria-hidden="true"
-                                    ></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                                <div className="col-xl-4 pe-0 ps-2 pb-4">
+                                    <ProjectInfo
+                                        description={projectObj.description}
+                                        awards={projectObj.awards}
+                                        tech={projectObj.tech}
+                                        liveUrl={projectObj.liveUrl}
+                                        github={projectObj.github}
+                                    />
+                                </div>
                             </div>
                         </div>
-                        <div className="col-xl-3">
-                            {project.title === "Browser Party" && <BrowserParty/>}
-                            {project.title === "Skyfall Travel" && <SkyfallTravel/>}
-                            {project.title === "Dosch Realty" && <DoschRealty/>}
-                        </div>
-                    </div>
+                    )}
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 };

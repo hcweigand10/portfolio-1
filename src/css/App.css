@@ -1,8 +1,8 @@
 :root {
     --pink: rgb(224, 100, 121);
     --light: rgb(255, 255, 255);
-    --darkgrey: rgba(68, 68, 68, 0.952);
-    --lightgrey: rgba(235, 235, 235, 0.55);
+    --darkgrey: rgba(101, 101, 101, 0.952);
+    --lightgrey: rgba(214, 214, 214, 0.808);
     --dark: rgb(0, 0, 0);
     --blue: #36d6fef0;
     --primary: #8f0b0b;
@@ -136,6 +136,7 @@
     min-height: 14vh;
 }
 
+/* Footer */
 #override .footer-social {
   color: white;
   opacity: 0.9;
@@ -145,4 +146,36 @@
 #override .footer-social:hover {
   opacity: 1;
   box-shadow: 0px 0px 2px 2px lightgray;
+}
+
+/* Carousel */
+#override .carousel-item-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+#override .carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: rgb(58, 58, 58);
+    padding: 20px 0 30px
+}
+
+#override .carousel-indicators {
+    margin-bottom: 10px;
+}
+
+
+/* Project View */
+#override .project-view-inner {
+    padding: 0 30px
+}
+
+@media screen and (min-width: 762px) {
+    #override .project-view-inner {
+        padding: 0;
+        width: 90%;
+        max-width: 1400px;
+    }
 }
