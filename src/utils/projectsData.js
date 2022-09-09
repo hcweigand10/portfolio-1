@@ -15,9 +15,8 @@ import skyfalledit from "../assets/images/details/skyfall-travel/skyfall-edit.pn
 import skyfalltrip from "../assets/images/details/skyfall-travel/skyfall-trip.png";
 import peterhome from "../assets/images/details/strasser-music/peter-home.png";
 import peterabout from "../assets/images/details/strasser-music/peter-about.png";
-import peterportal from "../assets/images/details/strasser-music/peter-portal.png";
+import peterportal from "../assets/images/details/strasser-music/peter-studentportal.png";
 import peteradmin from "../assets/images/details/strasser-music/peter-admin.png";
-// import peteredit from "../assets/images/details/strasser-music/peter-edit.png";
 
 const projects = {
     browserParty: {
