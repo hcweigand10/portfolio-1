@@ -47,10 +47,10 @@ const ProjectInfo = ({ description, awards, tech, liveUrl, github }) => {
                 {techUsed}
             </div>
             <div className="d-flex justify-content-evenly pt-4">
-                <a className="btn custom-btn" href={liveUrl}>
+                <a className="btn custom-btn" href={liveUrl} target="_blank" rel="noreferrer">
                     Live Site <FontAwesomeIcon icon={faUpRightFromSquare} />
                 </a>
-                <a className="btn custom-btn" href={github}>
+                <a className="btn custom-btn" href={github} target="_blank" rel="noreferrer">
                     Github Repo
                 </a>
             </div>

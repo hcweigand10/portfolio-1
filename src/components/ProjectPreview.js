@@ -30,7 +30,7 @@ const ProjectPreview = ({ thumbnail, hook, title, liveUrl }) => {
                         {hook}
                     </p>
                     <div>
-                        <a className="btn custom-btn" href={liveUrl}>
+                        <a className="btn custom-btn" href={liveUrl} target="_blank" rel="noreferrer">
                             Live Site{" "}
                             <FontAwesomeIcon icon={faUpRightFromSquare} />
                         </a>
