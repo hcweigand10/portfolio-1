@@ -99,13 +99,13 @@ const projects = {
             },
         ],
         thumbnail: doschhome,
-        tech: ["React", "Javascript", "SQL", "Node", "Express"]
+        tech: ["React", "Javascript", "MySQL", "Node", "Express"]
     },
     skyfallTravel: {
         title: "Skyfall Travel",
         hook: "Skyfall is a travel-planning application, designed for easy budget and logistics management",
         description:
-            "Skyfall Travel was my first full-stack application. It utilizes a MYSQL database to enable users to plan, and save future trips to their account, including things like stops, dates, and budget breakdowns.",
+            "Skyfall Travel was my very first first full-stack application. As part of a team of a boot camp students, we wanted to create something that could serve a purpose in our lives, and after realizing we all had travel plans on the horizon, we decided to create a trip management system that could alleviate some the stress of budgeting a vacation. <br> <br> We wanted Skyfall to make it easy to compartmentalize different sections of a trip, as when traveling across countries expenses can vary greatly. In order to achieve this, our ERD included both Trip, Stop, and Expense tables, with expenses belonging to specific stops within a larger trip. And then once a trip was fully fleshed out, users could view their total expenses broken down by how and where they would be accrued. <br> <br> Looking back, this project kick started my interest in relational databases and UI/UX design in regards to editing data. And despite being the only 3 person team in the class, we were awarded both Best Functionality and Best Overall (voted on by other students). ",
         awards: ["Best Overall", "Best Functionality"],
         liveUrl: "https://skyfall-travel.herokuapp.com/",
         github: "https://github.com/hcweigand10/SkyFall-Travel",
@@ -134,7 +134,7 @@ const projects = {
             },
         ],
         thumbnail: skyfallhome,
-        tech: ["Handlebars", "Javascript", "SQL", "Node", "Express"]
+        tech: ["Handlebars", "Javascript", "MySQL", "Node", "Express"]
     },
     peterMusic: {
         title: "Peter Strasser Music",
