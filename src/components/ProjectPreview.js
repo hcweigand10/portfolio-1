@@ -1,7 +1,6 @@
 import React from "react";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { width } from "@mui/system";
 
 const ProjectPreview = ({ thumbnail, hook, title, liveUrl }) => {
     const toSnakeCase = (title) => {
