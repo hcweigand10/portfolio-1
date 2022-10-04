@@ -24,16 +24,14 @@ const ProjectInfo = ({ description, awards, tech, liveUrl, github }) => {
 
     const techUsed = tech.map((e, index) => {
         return (
-            <div className="col-4 py-0" key={index}>
-                {e}
-            </div>
+                <span className="tech-used px-2 mt-1 d-flex w-auto mx-2">{e}</span>
         );
     });
 
     return (
         <div className="">
             <h4 className="mb-1">Description</h4>
-            <p id="description-long" style={{ lineHeight: "1.15" }}></p>
+            <p id="description-long" style={{ lineHeight: "1.2" }}></p>
             {awards.length > 0 && (
                 <div>
                     <h4 className="mb-1">Awards</h4>
@@ -43,7 +41,7 @@ const ProjectInfo = ({ description, awards, tech, liveUrl, github }) => {
                 </div>
             )}
             <h4 className="mb-1">Tech Used</h4>
-            <div className="row d-flex" style={{ flexWrap: "wrap" }}>
+            <div className="row d-flex" style={{ flexWrap: "wrap", lineHeight: "2" }}>
                 {techUsed}
             </div>
             <div className="d-flex justify-content-evenly pt-4">

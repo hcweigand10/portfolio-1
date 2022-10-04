@@ -88,10 +88,10 @@ const ProjectView = () => {
                     {projectObj.title && (
                         <div className="py-3">
                             <div className="row">
-                                <div className="col-xl-8 pb-4">
+                                <div className="col-xxl-8 pb-4">
                                     <CarouselPlus pics={projectObj.pics} />
                                 </div>
-                                <div className="col-xl-4 pe-0 ps-2 pb-4">
+                                <div className="col-xxl-4 pe-0 ps-3 pb-4">
                                     <ProjectInfo
                                         description={projectObj.description}
                                         awards={projectObj.awards}

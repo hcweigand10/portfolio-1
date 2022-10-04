@@ -1,11 +1,12 @@
 :root {
-    --pink: rgb(224, 100, 121);
+    --pink: rgb(244, 194, 203);
     --light: rgb(255, 255, 255);
     --darkgrey: rgba(101, 101, 101, 0.952);
     --lightgrey: rgba(214, 214, 214, 0.808);
     --dark: rgb(0, 0, 0);
     --blue: #36d6fef0;
     --primary: #8f0b0b;
+    --fadedprimary: #db5959;
     --secondary: #ffd700;
     --steelblue: #4682b4;
 }
@@ -174,6 +175,13 @@
 /* Project View */
 #override .project-view-inner {
     padding: 0 30px
+}
+
+#override .tech-used {
+    color: var(--pink);
+    background-color: var(--fadedprimary);
+    font-weight: 100;
+    border-radius: 10%;
 }
 
 @media screen and (min-width: 762px) {
