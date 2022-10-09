@@ -43,7 +43,7 @@ const ProjectView = () => {
 
     return (
         <div className="" style={{ minHeight: "86vh" }} id="project-view">
-            <Navbar />
+            <Navbar isHome={false}/>
             <div
                 className=""
                 id="project-view-main"

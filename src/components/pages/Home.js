@@ -11,7 +11,7 @@ const Home = () => {
 
     return (
         <div className='' style={{minHeight: "86vh"}} id="home">
-            <Navbar />
+            <Navbar isHome={true}/>
              <Landing/>
              <About/>
              <Skills/>

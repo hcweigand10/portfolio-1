@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MDBCollapse } from "mdb-react-ui-kit";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
+const Navbar = ({isHome}) => {
     const [collapse, setCollapse] = useState(true);
     const [absolute, setAbsolute] = useState(false);
 
@@ -62,7 +62,7 @@ const Navbar = () => {
                     }
                 >
                     {/* <!-- Rght links --> */}
-                    <ul
+                    {isHome ? (<ul
                         className="navbar-nav mb-md-0 py-1 justify-content-end d-flex"
                         style={{ fontSize: "18px", width: "100%" }}
                     >
@@ -110,10 +110,19 @@ const Navbar = () => {
                                 Contact
                             </ScrollLink>
                         </li>
-                    </ul>
+                    </ul>) : (
+                        <ul
+                        className="navbar-nav mb-md-0 py-1 justify-content-end d-flex"
+                        style={{ fontSize: "18px", width: "100%" }}
+                    >
+                            <li className="nav-item mx-2">
+                                <a className="nav-link custom-link" href="/">Home</a>
+                            </li>
+                        </ul>
+                    )}
+                    
                     {/* <!-- Rght links --> */}
                 </MDBCollapse>
-                {/* <!-- Collapsible wrapper --> */}
             </div>
         </nav>
     );

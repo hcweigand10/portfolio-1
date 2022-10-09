@@ -169,7 +169,7 @@ const projects = {
             },
         ],
         thumbnail: peterhome,
-        tech: ["React", "Javascript", "MongoDB", "MaterialUI", "Node", "Express"]
+        tech: ["React", "React Query", "Javascript", "MongoDB", "MaterialUI", "Node", "Express"]
     },
 };
 
