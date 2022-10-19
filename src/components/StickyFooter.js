@@ -14,7 +14,7 @@ const StickyFooter = () => {
             <div className="d-flex justify-content-center">
                 <hr className="my-2" style={{ width: "80%" }} />
             </div>
-            <p className="my-0">
+            <p className="my-0 pb-1">
                 <FontAwesomeIcon className="me-1" icon={faCopyright} />
                 <a
                     href="https;//henryweigand.com"
