@@ -15,6 +15,7 @@
     font-family: "Source Sans Pro";
 }
 
+
 /* Navbar */
 #override .custom-link {
     color: black;
@@ -29,6 +30,7 @@
 #override .custom-nav {
     border-bottom: 4px solid var(--primary);
 }
+
 
 /* Home  */
 #override .bg-custom-lg {
@@ -136,6 +138,7 @@
     color: var(--lightgrey);
     min-height: 14vh;
 }
+
 
 /* Footer */
 #override .footer-social {
