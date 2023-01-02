@@ -25,7 +25,7 @@ const projects = {
         description:
             "I've always loved video games, and have aspired on and off to create a game ever since my first CS class in undergrad. The absurd popularity of simple games like Among Us or even Wordle has proven that the actual gameplay isn't always what draws us in to a game, but rather, it's the ability to connect with friends while playing. With this in mind, I set out to make a mobile-friendly party game that prioritzed player connection. <br> <br> Browser Party ultilizes socket.io to connect your group to a specific 'room', from which our socket.io server manages the game progression. So while each round's minigame is ran client side, each player's websocket is listening for events from the server that control the rounds and the data displayed on the scoreboard. <br> <br> Our end result is something I'm extremely proud of; a simple, easy to use party game that literally anyone can play in a matter of seconds.",
         awards: ["Best Functionality"],
-        liveUrl: "https://browser-party.herokuapp.com/",
+        liveUrl: "https://browserparty.netlify.app/",
         github: "https://github.com/kingnolds/Browser-Party",
         pics: [
             {
@@ -107,7 +107,7 @@ const projects = {
         description:
             "Skyfall Travel was my very first first full-stack application. As part of a team of a boot camp students, we wanted to create something that could serve a purpose in our lives, and after realizing we all had travel plans on the horizon, we decided to create a trip management system that could alleviate some the stress of budgeting a vacation. <br> <br> We wanted Skyfall to make it easy to compartmentalize different sections of a trip, as when traveling across countries expenses can vary greatly. In order to achieve this, our ERD included both Trip, Stop, and Expense tables, with expenses belonging to specific stops within a larger trip. And then once a trip was fully fleshed out, users could view their total expenses broken down by how and where they would be accrued. <br> <br> Looking back, this project kick started my interest in relational databases and UI/UX design in regards to editing data. And despite being the only 3 person team in the class, we were awarded both Best Functionality and Best Overall (voted on by other students). ",
         awards: ["Best Overall", "Best Functionality"],
-        liveUrl: "https://skyfall-travel.herokuapp.com/",
+        liveUrl: "https://vast-jade-swallow.cyclic.app/",
         github: "https://github.com/hcweigand10/SkyFall-Travel",
         pics: [
             {
