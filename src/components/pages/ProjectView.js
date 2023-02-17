@@ -33,6 +33,9 @@ const ProjectView = () => {
             case "skyfall-travel":
                 setProjectObj(projects.skyfallTravel);
                 break;
+            case "geoquizzer":
+                setProjectObj(projects.geoquizzer);
+                break;
             default:
                 setProjectObj(projects.browserParty);
                 break;

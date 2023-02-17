@@ -17,161 +17,200 @@ import peterhome from "../assets/images/details/strasser-music/peter-home.png";
 import peterabout from "../assets/images/details/strasser-music/peter-about.png";
 import peterportal from "../assets/images/details/strasser-music/peter-studentportal.png";
 import peteradmin from "../assets/images/details/strasser-music/peter-admin.png";
+import geoguess from "../assets/images/details/geoquizzer/geoquizzer-guess-here.png";
+import geoscore from "../assets/images/details/geoquizzer/geoquizzer-score.png";
+import geostats from "../assets/images/details/geoquizzer/geoquizzer-stats.png";
 
 const projects = {
-    browserParty: {
-        title: "Browser Party",
-        hook: "A browser-based multiplayer party game that lets friends play against each in real time!",
-        description:
-            "I've always loved video games, and have aspired on and off to create a game ever since my first CS class in undergrad. The absurd popularity of simple games like Among Us or even Wordle has proven that the actual gameplay isn't always what draws us in to a game, but rather, it's the ability to connect with friends while playing. With this in mind, I set out to make a mobile-friendly party game that prioritzed player connection. <br> <br> Browser Party ultilizes socket.io to connect your group to a specific 'room', from which our socket.io server manages the game progression. So while each round's minigame is ran client side, each player's websocket is listening for events from the server that control the rounds and the data displayed on the scoreboard. <br> <br> Our end result is something I'm extremely proud of; a simple, easy to use party game that literally anyone can play in a matter of seconds.",
-        awards: ["Best Functionality"],
-        liveUrl: "https://browserparty.netlify.app/",
-        github: "https://github.com/kingnolds/Browser-Party",
-        pics: [
-            {
-                src: bpstartscreen,
-                heading: "Start Screen",
-                caption:
-                    "Players can either host a new lobby or join existing",
-            },
-            {
-                src: bppregame,
-                heading: "Pregame Lobby",
-                caption: "Players can chat with others while the host configures the game settings",
-            },
-            {
-                src: bptrivia,
-                heading: "Round 1: Trivia",
-                caption: "Questions pulled from trivia API",
-            },
-            {
-                src: bpwhack,
-                heading: "Round 2: Whack-a-Mole",
-                caption:
-                    "Whack the moles!",
-            },
-            {
-                src: bpmemory,
-                heading: "Round 3: Memory",
-                caption:
-                    "Find as many pairs as possible before the time runs out",
-            },
-            {
-                src: bpscoreboard,
-                heading: "Scoreboard",
-                caption:
-                    "Scores are updated and displayed after each round and at the end of the game",
-            },
-        ],
-        thumbnail: bpstartscreen,
-        tech: ["Socket.io", "React", "Javascript", "Node", "Exress", "MongoDB"]
-    },
-    doschRealty: {
-        title: "Bradley Dosch Realty",
-        hook: "A personal website for Seattle-based real estate agent, Bradley Dosch, featuring a blog and dynamic Zillow reviews",
-        description:
-            "Post-bootcamp, this was my first solo project and opportunity to build something practical outside the scope of a virtual classroom. Bradley asked me to make him a multi-use website that he could use to promote both his brand and his real estate career, which aligned perfectly with skills I wanted to work more on. <br> <br> To start off, I went for a simple design concept and separate pages for each of his goals. Additionally, I created a landing page that quickly displayed who he was and then directed visitors to other content on the site. The blog page was mostly straightforward while the reviews page had to pull data from a Zillow API. Because reviews can easily be faked online, I made sure to replicate Zillow's styling to look authentic and also provide a link Bradley's actual Zillow profile. <br> <br> Finally, I created a secure admin dashboard for Bradley to add new blog posts and select which one should be 'featured' on the main site. While storing long strings of text in a SQL database is less than ideal, I was able to create a painless experience for the admin to create new posts with custom thumbnails, subtitles, and embedded images.",
-        awards: [],
-        liveUrl: "https://bradleydosch.com/",
-        github: "https://github.com/hcweigand10/fake-youtube",
-        pics: [
-            {
-                src: doschblog,
-                heading: "Blog Page",
-                caption:
-                    "Displays a featured blog up top with older blogs below",
-            },
-            {
-                src: doschblogpost,
-                heading: "Blog Post",
-                caption: "Blogs can have embedded pictures within each artice",
-            },
-            {
-                src: doschreviews,
-                heading: "Reviews Page",
-                caption: "Data pulled from Zillow API",
-            },
-            {
-                src: doschadmin,
-                heading: "Admin Dashboard",
-                caption:
-                    "One-stop-shop for Bradley to update, create, and edit his blogs",
-            },
-        ],
-        thumbnail: doschhome,
-        tech: ["React", "Javascript", "MySQL", "Node", "Express"]
-    },
-    skyfallTravel: {
-        title: "Skyfall Travel",
-        hook: "Skyfall is a travel-planning application, designed for easy budget and logistics management",
-        description:
-            "Skyfall Travel was my very first first full-stack application. As part of a team of a boot camp students, we wanted to create something that could serve a purpose in our lives, and after realizing we all had travel plans on the horizon, we decided to create a trip management system that could alleviate some the stress of budgeting a vacation. <br> <br> We wanted Skyfall to make it easy to compartmentalize different sections of a trip, as when traveling across countries expenses can vary greatly. In order to achieve this, our ERD included both Trip, Stop, and Expense tables, with expenses belonging to specific stops within a larger trip. And then once a trip was fully fleshed out, users could view their total expenses broken down by how and where they would be accrued. <br> <br> Looking back, this project kick started my interest in relational databases and UI/UX design in regards to editing data. And despite being the only 3 person team in the class, we were awarded both Best Functionality and Best Overall (voted on by other students). ",
-        awards: ["Best Overall", "Best Functionality"],
-        liveUrl: "https://vast-jade-swallow.cyclic.app/",
-        github: "https://github.com/hcweigand10/SkyFall-Travel",
-        pics: [
-            {
-                src: skyfallhome,
-                heading: "Landing Page",
-                caption:
-                    "Inspiring travel destinations and nav links to the user's dashboard",
-            },
-            {
-                src: skyfallcreate,
-                heading: "Creating a Trip",
-                caption: "Trips can contain unlimited stops, with specific information for each one",
-            },
-            {
-                src: skyfalledit,
-                heading: "Editing a Trip",
-                caption: "Edit on the fly with your exisiting data pre-populated",
-            },
-            {
-                src: skyfalltrip,
-                heading: "Trip Breakdown",
-                caption:
-                    "Once completed, users can view their trips with weather and budget info displayed clearly",
-            },
-        ],
-        thumbnail: skyfallhome,
-        tech: ["Handlebars", "Javascript", "MySQL", "Node", "Express"]
-    },
-    peterMusic: {
-        title: "Peter Strasser Music",
-        hook: "A web-app built for a Seattle-based music instructor that moves the payment and scheduling experiences for both students and the instructor online",
-        description:
-            "This project has been perhaps the most exciting for me to work on. Peter Strasser, a local music instructor, asked me to create a web application from which he could manage his student roster and students could log in to pay their balance and/or schedule their next lesson. This meant I would have to integrate both a secure database to store real student information and a Stripe checkout component. <br> <br> During development, I opted for MongoDB, which is a NoSQL database program, for data storage and react-bootstrap for the admin dashboard tools. Stripe's documentation made implementing a secure payment option fairly straightforward, and react-bootstrap also aided in ensuring that every part of the site is mobile friendly. <br> <br> Overall, this project was focused on delivering a complete solution to my client's needs, and in doing so I gained a wealth of experience in working with react-based full stack applications",
-        awards: [],
-        liveUrl: "https://peter-strasser.netlify.app/",
-        github: "https://github.com/hcweigand10/peter-music",
-        pics: [
-            {
-                src: peterhome,
-                heading: "Landing Page",
-                caption:
-                    "Making a positive first impression is important!",
-            },
-            {
-                src: peterabout,
-                heading: "About Section",
-                caption: "Info on Peter's background displayed immediately below the landing",
-            },
-            {
-                src: peterportal,
-                heading: "Student Portal",
-                caption: "Once logged in, students can pay off their balance and schedule their next appointment",
-            },
-            {
-                src: peteradmin,
-                heading: "Admin Dashboard",
-                caption:
-                    "On Peter's side of things, he can update and edit his student roster",
-            },
-        ],
-        thumbnail: peterhome,
-        tech: ["React", "React Query", "Javascript", "MongoDB", "MaterialUI", "Node", "Express"]
-    },
+  browserParty: {
+    title: "Browser Party",
+    hook: "A browser-based multiplayer party game that lets friends play against each in real time!",
+    description:
+      "I've always loved video games, and have aspired on and off to create a game ever since my first CS class in undergrad. The absurd popularity of simple games like Among Us or even Wordle has proven that the actual gameplay isn't always what draws us in to a game, but rather, it's the ability to connect with friends while playing. With this in mind, I set out to make a mobile-friendly party game that prioritzed player connection. <br> <br> Browser Party ultilizes socket.io to connect your group to a specific 'room', from which our socket.io server manages the game progression. So while each round's minigame is ran client side, each player's websocket is listening for events from the server that control the rounds and the data displayed on the scoreboard. <br> <br> Our end result is something I'm extremely proud of; a simple, easy to use party game that literally anyone can play in a matter of seconds.",
+    awards: ["Best Functionality"],
+    liveUrl: "https://browserparty.netlify.app/",
+    github: "https://github.com/kingnolds/Browser-Party",
+    pics: [
+      {
+        src: bpstartscreen,
+        heading: "Start Screen",
+        caption: "Players can either host a new lobby or join existing",
+      },
+      {
+        src: bppregame,
+        heading: "Pregame Lobby",
+        caption:
+          "Players can chat with others while the host configures the game settings",
+      },
+      {
+        src: bptrivia,
+        heading: "Round 1: Trivia",
+        caption: "Questions pulled from trivia API",
+      },
+      {
+        src: bpwhack,
+        heading: "Round 2: Whack-a-Mole",
+        caption: "Whack the moles!",
+      },
+      {
+        src: bpmemory,
+        heading: "Round 3: Memory",
+        caption: "Find as many pairs as possible before the time runs out",
+      },
+      {
+        src: bpscoreboard,
+        heading: "Scoreboard",
+        caption:
+          "Scores are updated and displayed after each round and at the end of the game",
+      },
+    ],
+    thumbnail: bpstartscreen,
+    tech: ["Socket.io", "React", "Javascript", "Node", "Exress", "MongoDB"],
+  },
+  doschRealty: {
+    title: "Bradley Dosch Realty",
+    hook: "A personal website for Seattle-based real estate agent, Bradley Dosch, featuring a blog and dynamic Zillow reviews",
+    description:
+      "Post-bootcamp, this was my first solo project and opportunity to build something practical outside the scope of a virtual classroom. Bradley asked me to make him a multi-use website that he could use to promote both his brand and his real estate career, which aligned perfectly with skills I wanted to work more on. <br> <br> To start off, I went for a simple design concept and separate pages for each of his goals. Additionally, I created a landing page that quickly displayed who he was and then directed visitors to other content on the site. The blog page was mostly straightforward while the reviews page had to pull data from a Zillow API. Because reviews can easily be faked online, I made sure to replicate Zillow's styling to look authentic and also provide a link Bradley's actual Zillow profile. <br> <br> Finally, I created a secure admin dashboard for Bradley to add new blog posts and select which one should be 'featured' on the main site. While storing long strings of text in a SQL database is less than ideal, I was able to create a painless experience for the admin to create new posts with custom thumbnails, subtitles, and embedded images.",
+    awards: [],
+    liveUrl: "https://bradleydosch.com/",
+    github: "https://github.com/hcweigand10/fake-youtube",
+    pics: [
+      {
+        src: doschblog,
+        heading: "Blog Page",
+        caption: "Displays a featured blog up top with older blogs below",
+      },
+      {
+        src: doschblogpost,
+        heading: "Blog Post",
+        caption: "Blogs can have embedded pictures within each artice",
+      },
+      {
+        src: doschreviews,
+        heading: "Reviews Page",
+        caption: "Data pulled from Zillow API",
+      },
+      {
+        src: doschadmin,
+        heading: "Admin Dashboard",
+        caption:
+          "One-stop-shop for Bradley to update, create, and edit his blogs",
+      },
+    ],
+    thumbnail: doschhome,
+    tech: ["React", "Javascript", "MySQL", "Node", "Express"],
+  },
+  skyfallTravel: {
+    title: "Skyfall Travel",
+    hook: "Skyfall is a travel-planning application, designed for easy budget and logistics management",
+    description:
+      "Skyfall Travel was my very first first full-stack application. As part of a team of a boot camp students, we wanted to create something that could serve a purpose in our lives, and after realizing we all had travel plans on the horizon, we decided to create a trip management system that could alleviate some the stress of budgeting a vacation. <br> <br> We wanted Skyfall to make it easy to compartmentalize different sections of a trip, as when traveling across countries expenses can vary greatly. In order to achieve this, our ERD included both Trip, Stop, and Expense tables, with expenses belonging to specific stops within a larger trip. And then once a trip was fully fleshed out, users could view their total expenses broken down by how and where they would be accrued. <br> <br> Looking back, this project kick started my interest in relational databases and UI/UX design in regards to editing data. And despite being the only 3 person team in the class, we were awarded both Best Functionality and Best Overall (voted on by other students). ",
+    awards: ["Best Overall", "Best Functionality"],
+    liveUrl: "https://vast-jade-swallow.cyclic.app/",
+    github: "https://github.com/hcweigand10/SkyFall-Travel",
+    pics: [
+      {
+        src: skyfallhome,
+        heading: "Landing Page",
+        caption:
+          "Inspiring travel destinations and nav links to the user's dashboard",
+      },
+      {
+        src: skyfallcreate,
+        heading: "Creating a Trip",
+        caption:
+          "Trips can contain unlimited stops, with specific information for each one",
+      },
+      {
+        src: skyfalledit,
+        heading: "Editing a Trip",
+        caption: "Edit on the fly with your exisiting data pre-populated",
+      },
+    ],
+    thumbnail: skyfallhome,
+    tech: ["Handlebars", "Javascript", "MySQL", "Node", "Express"],
+  },
+  peterMusic: {
+    title: "Peter Strasser Music",
+    hook: "A web-app built for a Seattle-based music instructor that moves the payment and scheduling experiences for both students and the instructor online",
+    description:
+      "This project has been perhaps the most exciting for me to work on. Peter Strasser, a local music instructor, asked me to create a web application from which he could manage his student roster and students could log in to pay their balance and/or schedule their next lesson. This meant I would have to integrate both a secure database to store real student information and a Stripe checkout component. <br> <br> During development, I opted for MongoDB, which is a NoSQL database program, for data storage and react-bootstrap for the admin dashboard tools. Stripe's documentation made implementing a secure payment option fairly straightforward, and react-bootstrap also aided in ensuring that every part of the site is mobile friendly. <br> <br> Overall, this project was focused on delivering a complete solution to my client's needs, and in doing so I gained a wealth of experience in working with react-based full stack applications",
+    awards: [],
+    liveUrl: "https://peter-strasser.netlify.app/",
+    github: "https://github.com/hcweigand10/peter-music",
+    pics: [
+      {
+        src: peterhome,
+        heading: "Landing Page",
+        caption: "Making a positive first impression is important!",
+      },
+      {
+        src: peterabout,
+        heading: "About Section",
+        caption:
+          "Info on Peter's background displayed immediately below the landing",
+      },
+      {
+        src: peterportal,
+        heading: "Student Portal",
+        caption:
+          "Once logged in, students can pay off their balance and schedule their next appointment",
+      },
+      {
+        src: peteradmin,
+        heading: "Admin Dashboard",
+        caption:
+          "On Peter's side of things, he can update and edit his student roster",
+      },
+    ],
+    thumbnail: peterhome,
+    tech: [
+      "React",
+      "React Query",
+      "Javascript",
+      "MongoDB",
+      "MaterialUI",
+      "Node",
+      "Express",
+    ],
+  },
+  geoquizzer: {
+    title: "GeoQuizzer",
+    hook: "A population guessing daily challenge for friends and family to flex their global knowledge!",
+    description:
+      "GeoQuizzer fulfilled my goal of creating a game that challenged users on their knowledge of geography and world populations. It's simple, but was a really fun project to flex my react and typescript skills, as well as play around with some new npm packages. <br> <br> To play, simply visit the site and take a guess at today's country! After having played a few days, you can compare your stats with friends or just learn what countries you need to read about a little bit more.",
+    awards: [],
+    liveUrl: "https://geoquizzer.netlify.app/",
+    github: "https://github.com/hcweigand10/population-guesser",
+    pics: [
+      {
+        src: geoguess,
+        heading: "Home Page",
+        caption: "Take a stab at the population of Argentina!",
+      },
+      {
+        src: geoscore,
+        heading: "Results",
+        caption: "After guessing, recieve your score out of 100",
+      },
+      {
+        src: geostats,
+        heading: "Stats",
+        caption:
+          "View your stats and compare with friends to see who's better at GeoQuizer",
+      },
+    ],
+    thumbnail: geoguess,
+    tech: [
+      "React",
+      "React Query",
+      "UseContext",
+      "Typescript",
+      "Globe.gl",
+      "Tailwind",
+    ],
+  },
 };
-
 
 export default projects;
