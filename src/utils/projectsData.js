@@ -101,36 +101,6 @@ const projects = {
     thumbnail: doschhome,
     tech: ["React", "Javascript", "MySQL", "Node", "Express"],
   },
-  skyfallTravel: {
-    title: "Skyfall Travel",
-    hook: "Skyfall is a travel-planning application, designed for easy budget and logistics management",
-    description:
-      "Skyfall Travel was my very first first full-stack application. As part of a team of a boot camp students, we wanted to create something that could serve a purpose in our lives, and after realizing we all had travel plans on the horizon, we decided to create a trip management system that could alleviate some the stress of budgeting a vacation. <br> <br> We wanted Skyfall to make it easy to compartmentalize different sections of a trip, as when traveling across countries expenses can vary greatly. In order to achieve this, our ERD included both Trip, Stop, and Expense tables, with expenses belonging to specific stops within a larger trip. And then once a trip was fully fleshed out, users could view their total expenses broken down by how and where they would be accrued. <br> <br> Looking back, this project kick started my interest in relational databases and UI/UX design in regards to editing data. And despite being the only 3 person team in the class, we were awarded both Best Functionality and Best Overall (voted on by other students). ",
-    awards: ["Best Overall", "Best Functionality"],
-    liveUrl: "https://vast-jade-swallow.cyclic.app/",
-    github: "https://github.com/hcweigand10/SkyFall-Travel",
-    pics: [
-      {
-        src: skyfallhome,
-        heading: "Landing Page",
-        caption:
-          "Inspiring travel destinations and nav links to the user's dashboard",
-      },
-      {
-        src: skyfallcreate,
-        heading: "Creating a Trip",
-        caption:
-          "Trips can contain unlimited stops, with specific information for each one",
-      },
-      {
-        src: skyfalledit,
-        heading: "Editing a Trip",
-        caption: "Edit on the fly with your exisiting data pre-populated",
-      },
-    ],
-    thumbnail: skyfallhome,
-    tech: ["Handlebars", "Javascript", "MySQL", "Node", "Express"],
-  },
   peterMusic: {
     title: "Peter Strasser Music",
     hook: "A web-app built for a Seattle-based music instructor that moves the payment and scheduling experiences for both students and the instructor online",

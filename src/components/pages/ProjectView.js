@@ -30,9 +30,6 @@ const ProjectView = () => {
             case "peter-strasser-music":
                 setProjectObj(projects.peterMusic);
                 break;
-            case "skyfall-travel":
-                setProjectObj(projects.skyfallTravel);
-                break;
             case "geoquizzer":
                 setProjectObj(projects.geoquizzer);
                 break;
