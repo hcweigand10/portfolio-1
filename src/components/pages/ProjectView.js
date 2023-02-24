@@ -4,42 +4,19 @@ import Navbar from "../Navbar";
 import projects from "../../utils/projectsData";
 import CarouselPlus from "../CarouselPlus";
 import ProjectInfo from "../ProjectInfo";
+import toSentenceCase from "../../utils/toSentenceCase";
 
 const ProjectView = () => {
-    const { project } = useParams();
-    const [projectObj, setProjectObj] = useState({
-        title: "",
-        hook: "",
-        description: "",
-        liveUrl: "",
-        github: "",
-        awards: [],
-        pics: [],
-        thumbnail: null,
-        tech: [],
-    });
+    // const { projectParam } = useParams();
+    const [projectObj, setProjectObj] = useState(projects.find(project => project.title === toSentenceCase(window.location.pathname.split("/")[2])));
 
-    useEffect(() => {
-        switch (project) {
-            case "browser-party":
-                setProjectObj(projects.browserParty);
-                break;
-            case "bradley-dosch-realty":
-                setProjectObj(projects.doschRealty);
-                break;
-            case "peter-strasser-music":
-                setProjectObj(projects.peterMusic);
-                break;
-            case "geoquizzer":
-                setProjectObj(projects.geoquizzer);
-                break;
-            default:
-                setProjectObj(projects.browserParty);
-                break;
-        }
-    }, [project]);
+    console.log(toSentenceCase(window.location.pathname.split("/")[2]))
+    // useEffect(() => {
+    //   console.log(projectParam)
+    //     setProjectObj(projects.find(project => project.title === toSentenceCase(projectParam || "browser-party")))
+    // }, [projectParam]);
 
-    console.log(projectObj);
+    // console.log(projectObj);
 
     return (
         <div className="" style={{ minHeight: "86vh" }} id="project-view">

@@ -41,14 +41,16 @@ const ProjectInfo = ({ description, awards, tech, liveUrl, github }) => {
                 </div>
             )}
             <h4 className="mb-1">Tech Used</h4>
-            <div className="row d-flex" style={{ flexWrap: "wrap", lineHeight: "2" }}>
+            <div className="row d-flex ms-1 mb-3" style={{ flexWrap: "wrap", lineHeight: "2" }}>
                 {techUsed}
             </div>
-            <div className="d-flex justify-content-evenly pt-4">
-                <a className="btn custom-btn" href={liveUrl} target="_blank" rel="noreferrer">
+            
+            <h4 className="mt-1">Check it Out</h4>
+            <div className="">
+                <a className="btn custom-btn mx-2" href={liveUrl} target="_blank" rel="noreferrer">
                     Live Site <FontAwesomeIcon icon={faUpRightFromSquare} />
                 </a>
-                <a className="btn custom-btn" href={github} target="_blank" rel="noreferrer">
+                <a className="btn custom-btn mx-2" href={github} target="_blank" rel="noreferrer">
                     Github Repo <FontAwesomeIcon icon={faUpRightFromSquare} />
                 </a>
             </div>

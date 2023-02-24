@@ -3,13 +3,7 @@ import ProjectPreview from "../ProjectPreview";
 import projects from "../../utils/projectsData";
 
 const Projects = () => {
-  const previews = [
-    projects.doschRealty,
-    projects.browserParty,
-    projects.geoquizzer,
-    projects.peterMusic,
-  ].map((project, index) => {
-    console.log(project.title);
+  const previews = projects.map((project, index) => {
     return (
       <ProjectPreview
         thumbnail={project.thumbnail}
@@ -17,6 +11,7 @@ const Projects = () => {
         title={project.title}
         liveUrl={project.liveUrl}
         key={index}
+        border={index != projects.length-1}
       />
     );
   });

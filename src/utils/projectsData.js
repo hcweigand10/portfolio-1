@@ -17,8 +17,8 @@ import geoguess from "../assets/images/details/geoquizzer/geoquizzer-guess-here.
 import geoscore from "../assets/images/details/geoquizzer/geoquizzer-score.png";
 import geostats from "../assets/images/details/geoquizzer/geoquizzer-stats.png";
 
-const projects = {
-  browserParty: {
+const projects = [
+  {
     title: "Browser Party",
     hook: "A browser-based multiplayer party game that lets friends play against each in real time!",
     description:
@@ -63,7 +63,7 @@ const projects = {
     thumbnail: bpstartscreen,
     tech: ["Socket.io", "React", "Javascript", "Node", "Exress", "MongoDB"],
   },
-  doschRealty: {
+  {
     title: "Bradley Dosch Realty",
     hook: "A personal website for Seattle-based real estate agent, Bradley Dosch, featuring a blog and dynamic Zillow reviews",
     description:
@@ -97,7 +97,7 @@ const projects = {
     thumbnail: doschhome,
     tech: ["React", "Javascript", "MySQL", "Node", "Express"],
   },
-  peterMusic: {
+  {
     title: "Peter Strasser Music",
     hook: "A web-app built for a Seattle-based music instructor that moves the payment and scheduling experiences for both students and the instructor online",
     description:
@@ -141,8 +141,8 @@ const projects = {
       "Express",
     ],
   },
-  geoquizzer: {
-    title: "GeoQuizzer",
+  {
+    title: "Geoquizzer",
     hook: "A population guessing daily challenge for friends and family to flex their global knowledge!",
     description:
       "GeoQuizzer fulfilled my goal of creating a game that challenged users on their knowledge of geography and world populations. It's simple, but was a really fun project to flex my react and typescript skills, as well as play around with some new npm packages. <br> <br> To play, simply visit the site and take a guess at today's country! After having played a few days, you can compare your stats with friends or just learn what countries you need to read about a little bit more.",
@@ -177,6 +177,6 @@ const projects = {
       "Tailwind",
     ],
   },
-};
+];
 
 export default projects;
