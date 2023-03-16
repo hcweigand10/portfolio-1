@@ -74,7 +74,9 @@ const ProjectView = () => {
                                         awards={projectObj.awards}
                                         tech={projectObj.tech}
                                         liveUrl={projectObj.liveUrl}
-                                        github={projectObj.github}
+                                        feGithub={projectObj.feGithub}
+                                        beGithub={projectObj.beGithub}
+                                        socketGithub={projectObj.socketGithub}
                                     />
                                 </div>
                             </div>
