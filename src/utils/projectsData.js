@@ -25,7 +25,9 @@ const projects = [
       "I've always loved video games, and have aspired on and off to create a game ever since my first CS class in undergrad. The absurd popularity of simple games like Among Us or even Wordle has proven that the actual gameplay isn't always what draws us in to a game, but rather, it's the ability to connect with friends while playing. With this in mind, I set out to make a mobile-friendly party game that prioritzed player connection. <br> <br> Browser Party ultilizes socket.io to connect your group to a specific 'room', from which our socket.io server manages the game progression. So while each round's minigame is ran client side, each player's websocket is listening for events from the server that control the rounds and the data displayed on the scoreboard. <br> <br> Our end result is something I'm extremely proud of; a simple, easy to use party game that literally anyone can play in a matter of seconds.",
     awards: ["Best Functionality"],
     liveUrl: "https://browserparty.netlify.app/",
-    github: "https://github.com/kingnolds/Browser-Party",
+    feGithub: "https://github.com/hcweigand10/Browser-Party-Frontend",
+    beGithub: "https://github.com/hcweigand10/Browser-Party-Backend",
+    socketGithub: "https://github.com/hcweigand10/Browser-Party-Socket-io",
     pics: [
       {
         src: bpstartscreen,
@@ -70,7 +72,9 @@ const projects = [
       "Post-bootcamp, this was my first solo project and opportunity to build something practical outside the scope of a virtual classroom. Bradley asked me to make him a multi-use website that he could use to promote both his brand and his real estate career, which aligned perfectly with skills I wanted to work more on. <br> <br> To start off, I went for a simple design concept and separate pages for each of his goals. Additionally, I created a landing page that quickly displayed who he was and then directed visitors to other content on the site. The blog page was mostly straightforward while the reviews page had to pull data from a Zillow API. Because reviews can easily be faked online, I made sure to replicate Zillow's styling to look authentic and also provide a link Bradley's actual Zillow profile. <br> <br> Finally, I created a secure admin dashboard for Bradley to add new blog posts and select which one should be 'featured' on the main site. While storing long strings of text in a SQL database is less than ideal, I was able to create a painless experience for the admin to create new posts with custom thumbnails, subtitles, and embedded images.",
     awards: [],
     liveUrl: "https://bradleydosch.com/",
-    github: "https://github.com/hcweigand10/fake-youtube",
+    feGithub: "https://github.com/hcweigand10/brad-realty",
+    beGithub: "https://github.com/hcweigand10/brad-realty-backend",
+    socketGithub: null,
     pics: [
       {
         src: doschblog,
@@ -104,7 +108,9 @@ const projects = [
       "This project has been perhaps the most exciting for me to work on. Peter Strasser, a local music instructor, asked me to create a web application from which he could manage his student roster and students could log in to pay their balance and/or schedule their next lesson. This meant I would have to integrate both a secure database to store real student information and a Stripe checkout component. <br> <br> During development, I opted for MongoDB, which is a NoSQL database program, for data storage and react-bootstrap for the admin dashboard tools. Stripe's documentation made implementing a secure payment option fairly straightforward, and react-bootstrap also aided in ensuring that every part of the site is mobile friendly. <br> <br> Overall, this project was focused on delivering a complete solution to my client's needs, and in doing so I gained a wealth of experience in working with react-based full stack applications",
     awards: [],
     liveUrl: "https://peter-strasser.netlify.app/",
-    github: "https://github.com/hcweigand10/peter-music",
+    feGithub: "https://github.com/hcweigand10/peter-music",
+    beGithub: "https://github.com/hcweigand10/peter-music-backend",
+    socketGithub: null,
     pics: [
       {
         src: peterhome,
@@ -148,7 +154,9 @@ const projects = [
       "GeoQuizzer fulfilled my goal of creating a game that challenged users on their knowledge of geography and world populations. It's simple, but was a really fun project to flex my react and typescript skills, as well as play around with some new npm packages. <br> <br> To play, simply visit the site and take a guess at today's country! After having played a few days, you can compare your stats with friends or just learn what countries you need to read about a little bit more.",
     awards: [],
     liveUrl: "https://geoquizzer.netlify.app/",
-    github: "https://github.com/hcweigand10/population-guesser",
+    feGithub: "https://github.com/hcweigand10/population-guesser",
+    beGithub: null,
+    socketGithub: null,
     pics: [
       {
         src: geoguess,
