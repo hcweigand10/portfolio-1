@@ -20,9 +20,9 @@ const About = () => {
                     <div className="pt-3 h-100">
                         <h5 className="text-muted">Henry Weigand</h5>
                         <p className="plain-text">
-                            I am a born and raised Seattlite and recent University of Washington graduate. I started coding in 2021 and am excited to pursue web development and software engineering as both a career and a hobby. </p>
+                            I was born and raised in Seattle and recently graduated from the University of Washington. I started coding in 2021 and am excited to pursue web development and software engineering as both a career and a hobby. </p>
                         <p>
-                            During the 2021-22 winter, I enrolled in the University of Washington's Full-Stack coding bootcamp, fully diving into this new chapter. Thanks to the diligence of my professor and TAs (shoutout Joe Rehfuss!) I came away with not only a foundation of web development skills, but also experience with professional workflows and project management. Out of all we learned, I am most excited to learn more about everything React!
+                            I currently work the Unversity of Washington's Full Stack Coding Boot Camp and freelance as a website builder. If you need a new online presence, please reach out!
                         </p>
                         <p>
                             Away from the computer, I enjoy watching and playing sports, playing video games way too competitively, and (attempting to) win pub trivia competitions. But most importantly, I want to travel, and here's to hoping that a tech career can open that door for me. :)
