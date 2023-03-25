@@ -22,7 +22,7 @@ const About = () => {
                         <p className="plain-text">
                             I was born and raised in Seattle and recently graduated from the University of Washington. I started coding in 2021 and am excited to pursue web development and software engineering as both a career and a hobby. </p>
                         <p>
-                            I currently work the Unversity of Washington's Full Stack Coding Boot Camp and freelance as a website builder. If you need a new online presence, please reach out!
+                            I currently at work the Unversity of Washington's Full Stack Coding Boot Camp and freelance as a website builder. If you need a new online presence, please reach out!
                         </p>
                         <p>
                             Away from the computer, I enjoy watching and playing sports, playing video games way too competitively, and (attempting to) win pub trivia competitions. But most importantly, I want to travel, and here's to hoping that a tech career can open that door for me. :)
