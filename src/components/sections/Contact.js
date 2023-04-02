@@ -79,10 +79,10 @@ const Contact = () => {
                         className="btn custom-btn my-3 mx-auto"
                         onClick={handleSend}
                     >
-                        Send Email
+                        Send Message
                     </button>
                 </div>
-                <p className={result === "Message sent!" ? "emerald" : "red"}>{result}</p>
+                <p className={result === "Message sent!" ? "emerald text-center" : "text-center red"}>{result}</p>
             </form>
         </Element>
     );
