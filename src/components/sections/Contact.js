@@ -1,7 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import {Element} from "react-scroll"
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+  const [formInfo, setFormInfo] = useState({name: "", email: "", message: ""})
+  const [result, setResult] = useState("")
+
+  const handleChange = (e) => {
+    setFormInfo({...formInfo, [e.target.name]: e.target.value})
+  }
+
+  const handleSend = async () => {
+    const response = await emailjs.send("service_7p1f6le", "template_z3711la", formInfo, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+    console.log(response)
+    if (response.status === 200) {
+      setResult("Message sent!")
+    } else {
+      setResult("Error sending message")
+    }
+  }
+
     return (
         <Element className="py-4 bg-custom-lg" id="contact" name="contact">
             <h2 className="section-heading text-center mb-1">Contact</h2>
@@ -18,17 +36,33 @@ const Contact = () => {
                 <div className="form-group">
                     <label htmlFor="form-name">Name</label>
                     <input
+                        name="name"
                         className="shadow form-control mx-auto"
                         id="form-name"
                         style={{
                             width: "100%",
                             border: "none",
                         }}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="form-name">Email</label>
+                    <input
+                        name="email"
+                        className="shadow form-control mx-auto"
+                        id="form-name"
+                        style={{
+                            width: "100%",
+                            border: "none",
+                        }}
+                        onChange={handleChange}
                     />
                 </div>
                 <div className="form-group">
                     <label htmlFor="form-message">Message</label>
                     <textarea
+                        name="message"
                         className="shadow form-control mx-auto"
                         id="form-message"
                         rows={4}
@@ -36,18 +70,19 @@ const Contact = () => {
                             width: "100%",
                             border: "none",
                         }}
+                        onChange={handleChange}
                     ></textarea>
                 </div>
                 <div className="d-flex">
-                    <a
+                    <button
+                        type="button"
                         className="btn custom-btn my-3 mx-auto"
-                        href="mailto:henryweigand10@gmail.com"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={handleSend}
                     >
                         Send Email
-                    </a>
+                    </button>
                 </div>
+                <p className={result === "Message sent!" ? "emerald" : "red"}>{result}</p>
             </form>
         </Element>
     );
