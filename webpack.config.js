@@ -35,7 +35,7 @@ module.exports = {
       template: path.join(__dirname, "public", "index.html"),
     }),
     new webpack.DefinePlugin({
-      process: {env: {}}
+      process: {env: {REACT_APP_EMAILJS_PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY}}
   })
   ],
 }
