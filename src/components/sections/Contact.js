@@ -9,7 +9,7 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormInfo({...formInfo, [e.target.name]: e.target.value})
   }
-  console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+
   const handleSend = async () => {
     const response = await emailjs.send("service_7p1f6le", "template_z3711la", formInfo, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
     console.log(response)
