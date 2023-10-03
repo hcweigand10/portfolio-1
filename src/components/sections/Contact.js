@@ -11,12 +11,17 @@ const Contact = () => {
   }
 
   const handleSend = async () => {
-    const response = await emailjs.send("service_7p1f6le", "template_z3711la", formInfo, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-    console.log(response)
-    if (response.status === 200) {
-      setResult("Message sent!")
+    if (formInfo.name && formInfo.email && formInfo.message) {
+      
+      const response = await emailjs.send("service_7p1f6le", "template_z3711la", formInfo, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+      console.log(response)
+      if (response.status === 200) {
+        setResult("Message sent!")
+      } else {
+        setResult("Error sending message")
+      }
     } else {
-      setResult("Error sending message")
+      alert("Some fields are still empty")
     }
   }
 
