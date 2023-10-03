@@ -18,7 +18,7 @@ import geoscore from "../assets/images/details/geoquizzer/geoquizzer-score.png";
 import geostats from "../assets/images/details/geoquizzer/geoquizzer-stats.png";
 import quizhome from "../assets/images/details/quiz-quo-pro/quizhome.png"
 import quiztest from "../assets/images/details/quiz-quo-pro/quiztest.png"
-import quizview from "../assets/images/details/quiz-quo-pro/quizhome.png"
+import quizview from "../assets/images/details/quiz-quo-pro/quizview.png"
 import appleservice from "../assets/images/details/apple-a-day/appleservice.png"
 import appleshift from "../assets/images/details/apple-a-day/appleshift.png"
 import applecustomer from "../assets/images/details/apple-a-day/applecustomer.png"
