@@ -16,8 +16,76 @@ import peteradmin from "../assets/images/details/strasser-music/peter-admin.png"
 import geoguess from "../assets/images/details/geoquizzer/geoquizzer-guess-here.png";
 import geoscore from "../assets/images/details/geoquizzer/geoquizzer-score.png";
 import geostats from "../assets/images/details/geoquizzer/geoquizzer-stats.png";
+import quizhome from "../assets/images/details/quiz-quo-pro/quizhome.png"
+import quiztest from "../assets/images/details/quiz-quo-pro/quiztest.png"
+import quizview from "../assets/images/details/quiz-quo-pro/quizhome.png"
+import appleservice from "../assets/images/details/apple-a-day/appleservice.png"
+import appleshift from "../assets/images/details/apple-a-day/appleshift.png"
+import applecustomer from "../assets/images/details/apple-a-day/applecustomer.png"
 
 const projects = [
+  {
+    title: "Quiz Quo Pro",
+    hook: "A quizlet-inspired flashcards app to improve or test your knowledge",
+    description:
+      "Create your own sets or try your hand at others'. Once you think you have the terms down, take on 'test' mode and see where you end up on the leaderboard! <br> <br> The site is easy and fun to navigate, as well as allowing for your own custom animal avatar",
+    awards: [],
+    liveUrl: "https://flashcards-pro.netlify.app/",
+    feGithub: "https://github.com/hcweigand10/quizlet-free",
+    beGithub: "https://github.com/hcweigand10/quizlet-back",
+    socketGithub: "https://github.com/hcweigand10/Browser-Party-Socket-io",
+    pics: [
+      {
+        src: quizhome,
+        heading: "Home Screen",
+        caption: "Welcome to Quiz Quo Pro",
+      },
+      {
+        src: quizview,
+        heading: "Deck View",
+        caption:
+          "View cards and highscores or choose to begin learning or testing",
+      },
+      {
+        src: quiztest,
+        heading: "Test",
+        caption: "Race to answer all prompts as fast as possible to earn a spot on the leaderboard",
+      },
+    ],
+    thumbnail: quizhome,
+    tech: ["React", "Javascript", "Node", "Exress", "MongoDB", "GraphQL"],
+  },
+  {
+    title: "Apple-a-Day Cafe",
+    hook: "Complete POS for Seattle-based food bank",
+    description:
+      "Alongside their traditional pantry, University District food bank is opening a cafe to serve hot meals to those in need. <br> <br> This app will enable them to track customer orders and shift data, empowering them to make more informed decisions on what food items their patrons prefer.",
+    awards: [],
+    liveUrl: "https://apple-a-day-cafe.netlify.app/",
+    feGithub: "https://github.com/Rufasa85/apple-a-day-pos",
+    beGithub: "https://github.com/Rufasa85/apple-a-day-pos-back",
+    socketGithub: null,
+    pics: [
+      {
+        src: appleservice,
+        heading: "Service Screen",
+        caption: "Add items to today's shift, find a customer, or take a new order",
+      },
+      {
+        src: appleshift,
+        heading: "Shift Report",
+        caption:
+          "View specific orders and an item breakdown from previous shifts",
+      },
+      {
+        src: applecustomer,
+        heading: "Customer Report",
+        caption: "While orders don't need to have a customer to be submitted, you can track those that do",
+      },
+    ],
+    thumbnail: appleservice,
+    tech: ["React", "Javascript", "Node", "Exress", "MySQL", "REST API"],
+  },
   {
     title: "Browser Party",
     hook: "A browser-based multiplayer party game that lets friends play against each in real time!",
@@ -27,7 +95,7 @@ const projects = [
     liveUrl: "https://browserparty.netlify.app/",
     feGithub: "https://github.com/hcweigand10/Browser-Party-Frontend",
     beGithub: "https://github.com/hcweigand10/Browser-Party-Backend",
-    socketGithub: "https://github.com/hcweigand10/Browser-Party-Socket-io",
+    socketGithub: null,
     pics: [
       {
         src: bpstartscreen,

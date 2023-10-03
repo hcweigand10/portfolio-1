@@ -56,9 +56,6 @@ const ProjectInfo = ({ description, awards, tech, liveUrl, feGithub, beGithub, s
                 {beGithub? <a className="btn custom-btn m-2" href={beGithub} target="_blank" rel="noreferrer">
                     Backend Repo <FontAwesomeIcon icon={faUpRightFromSquare} />
                 </a>:null}
-                {socketGithub? <a className="btn custom-btn m-2" href={socketGithub} target="_blank" rel="noreferrer">
-                    Socket.io Repo <FontAwesomeIcon icon={faUpRightFromSquare} />
-                </a>:null}
             </div>
         </div>
     );
