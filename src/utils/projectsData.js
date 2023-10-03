@@ -87,6 +87,44 @@ const projects = [
     tech: ["React", "Javascript", "Node", "Exress", "MySQL", "REST API"],
   },
   {
+    title: "Geoquizzer",
+    hook: "A population guessing daily challenge for friends and family to flex their global knowledge!",
+    description:
+      "GeoQuizzer fulfilled my goal of creating a game that challenged users on their knowledge of geography and world populations. It's simple, but was a really fun project to flex my react and typescript skills, as well as play around with some new npm packages. <br> <br> To play, simply visit the site and take a guess at today's country! After having played a few days, you can compare your stats with friends or just learn what countries you need to read about a little bit more.",
+    awards: [],
+    liveUrl: "https://geoquizzer.netlify.app/",
+    feGithub: "https://github.com/hcweigand10/population-guesser",
+    beGithub: null,
+    socketGithub: null,
+    pics: [
+      {
+        src: geoguess,
+        heading: "Home Page",
+        caption: "Take a stab at the population of Argentina!",
+      },
+      {
+        src: geoscore,
+        heading: "Results",
+        caption: "After guessing, recieve your score out of 100",
+      },
+      {
+        src: geostats,
+        heading: "Stats",
+        caption:
+          "View your stats and compare with friends to see who's better at GeoQuizer",
+      },
+    ],
+    thumbnail: geoguess,
+    tech: [
+      "React",
+      "React Query",
+      "UseContext",
+      "Typescript",
+      "Globe.gl",
+      "Tailwind",
+    ],
+  },
+  {
     title: "Browser Party",
     hook: "A browser-based multiplayer party game that lets friends play against each in real time!",
     description:
@@ -215,44 +253,7 @@ const projects = [
       "Express",
     ],
   },
-  {
-    title: "Geoquizzer",
-    hook: "A population guessing daily challenge for friends and family to flex their global knowledge!",
-    description:
-      "GeoQuizzer fulfilled my goal of creating a game that challenged users on their knowledge of geography and world populations. It's simple, but was a really fun project to flex my react and typescript skills, as well as play around with some new npm packages. <br> <br> To play, simply visit the site and take a guess at today's country! After having played a few days, you can compare your stats with friends or just learn what countries you need to read about a little bit more.",
-    awards: [],
-    liveUrl: "https://geoquizzer.netlify.app/",
-    feGithub: "https://github.com/hcweigand10/population-guesser",
-    beGithub: null,
-    socketGithub: null,
-    pics: [
-      {
-        src: geoguess,
-        heading: "Home Page",
-        caption: "Take a stab at the population of Argentina!",
-      },
-      {
-        src: geoscore,
-        heading: "Results",
-        caption: "After guessing, recieve your score out of 100",
-      },
-      {
-        src: geostats,
-        heading: "Stats",
-        caption:
-          "View your stats and compare with friends to see who's better at GeoQuizer",
-      },
-    ],
-    thumbnail: geoguess,
-    tech: [
-      "React",
-      "React Query",
-      "UseContext",
-      "Typescript",
-      "Globe.gl",
-      "Tailwind",
-    ],
-  },
+  
 ];
 
 export default projects;

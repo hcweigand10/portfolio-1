@@ -11,7 +11,7 @@ const Projects = () => {
         title={project.title}
         liveUrl={project.liveUrl}
         key={index}
-        border={index != projects.length-1}
+        border={index !== projects.length-1}
       />
     );
   });
