@@ -10,13 +10,6 @@ const ProjectView = () => {
     // const { projectParam } = useParams();
     const [projectObj, setProjectObj] = useState(projects.find(project => project.title === toSentenceCase(window.location.pathname.split("/")[2])));
 
-    console.log(toSentenceCase(window.location.pathname.split("/")[2]))
-    // useEffect(() => {
-    //   console.log(projectParam)
-    //     setProjectObj(projects.find(project => project.title === toSentenceCase(projectParam || "browser-party")))
-    // }, [projectParam]);
-
-    // console.log(projectObj);
 
     return (
         <div className="" style={{ minHeight: "86vh" }} id="project-view">

@@ -56,7 +56,7 @@ const projects = [
     tech: ["React", "Javascript", "Node", "Exress", "MongoDB", "GraphQL"],
   },
   {
-    title: "Apple-a-Day Cafe",
+    title: "Apple A Day Cafe",
     hook: "Complete POS for Seattle-based food bank",
     description:
       "Alongside their traditional pantry, University District food bank is opening a cafe to serve hot meals to those in need. <br> <br> This app will enable them to track customer orders and shift data, empowering them to make more informed decisions on what food items their patrons prefer.",
